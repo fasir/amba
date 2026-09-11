@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ml">
 <head>
@@ -29,10 +28,6 @@
 @media (min-width:761px) and (max-width:1024px){.layout{display:flex;flex-wrap:wrap}.layout>.book{width:100%!important}.layout>.toc.is-open{grid-template-columns:repeat(3,1fr);gap:0 18px}}
 @media (max-width:760px){.layout>.toc.is-open{grid-template-columns:repeat(2,1fr);gap:0 15px}.contents-toggle{margin-bottom:14px}}
 .hero-grid.row,.layout.row,.more-grid.row{display:flex;flex-wrap:wrap;gap:0}
-/* Flipbook reader */
-.flipbook-shell{position:relative}.flipbook-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:18px 0 0;padding:12px 14px;background:var(--green);color:#fff}.flipbook-controls{display:flex;align-items:center;gap:8px}.flipbook-button{border:1px solid rgba(255,255,255,.42);background:transparent;color:#fff;min-width:38px;height:34px;padding:0 11px;cursor:pointer;font:600 .78rem Manrope,sans-serif}.flipbook-button:hover:not(:disabled){background:#fff;color:var(--green)}.flipbook-button:disabled{opacity:.4;cursor:not-allowed}.flipbook-count{font-size:.78rem;color:rgba(255,255,255,.78);white-space:nowrap}.flipbook-stage{position:relative;min-height:560px;perspective:1800px;background:linear-gradient(135deg,#e5d7bf,#f9f5eb 48%,#e9dfce);border:1px solid var(--line);box-shadow:0 16px 35px rgba(57,45,27,.1);overflow:hidden}.flipbook-page{position:absolute;inset:0;padding:52px clamp(24px,6vw,76px);background:var(--paper);transform-origin:left center;backface-visibility:hidden;transition:transform .62s cubic-bezier(.2,.75,.25,1),opacity .35s;overflow:auto;opacity:0;pointer-events:none}.flipbook-page.active{opacity:1;pointer-events:auto;transform:rotateY(0);z-index:2}.flipbook-page.prev{transform:rotateY(-95deg);z-index:1}.flipbook-page.next{transform:rotateY(8deg);z-index:1}.flipbook-page .poem{border:0;margin:0;padding:0 0 28px}.flipbook-page .poem:before{display:none}.flipbook-page .book-intro{box-shadow:none;margin:0;padding:0 0 25px;border-width:0 0 1px}.flipbook-page .book-intro:last-child{border:0}.flipbook-page .verse{max-width:680px}.flipbook-page-number{position:absolute;right:25px;bottom:17px;color:var(--muted);font-size:.7rem;letter-spacing:.12em}.flipbook-hint{margin:12px 0 0;color:var(--muted);font-size:.76rem;text-align:center}.flipbook-shell .book-intro,.flipbook-shell>.poem{display:none}
-@media(max-width:760px){.flipbook-toolbar{margin-left:-1px;margin-right:-1px}.flipbook-stage{min-height:520px}.flipbook-page{padding:34px 22px 48px}.flipbook-page h3{font-size:1.55rem}.flipbook-page .verse{font-size:.96rem;line-height:1.95}.flipbook-hint{font-size:.7rem}}
-.flipbook-page.active .book-intro{display:block!important}.flipbook-page:first-child{display:flex;align-items:center;justify-content:center;text-align:center}.flipbook-page:first-child .book-intro{width:min(100%,620px);border:0}.flipbook-page:first-child .book-intro h2{font-size:clamp(2.5rem,7vw,5.5rem);line-height:1.12;color:var(--green);margin:18px 0}.flipbook-page:first-child .book-intro p{margin:0 auto;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -43,7 +38,7 @@
 <button class="contents-toggle ml" type="button" aria-expanded="false" aria-controls="contents-panel"><span>ഉള്ളടക്കം തുറക്കുക</span><span class="contents-toggle-icon" aria-hidden="true">⌄</span></button>
     <aside class="toc col-lg-3" id="contents-panel">
     <h2>ഉള്ളടക്കം</h2><a href="#prarthana">പ്രാർത്ഥന</a><a href="#punahsamagamam">പുനഃസമാഗമം</a><a href="#hridayaragham">ഹൃദയരാഗം</a><a href="#uppittakalam">ഉപ്പിട്ട കലം</a><a href="#vedantham">വേദാന്തം</a><a href="#moksham">മോക്ഷം</a><a href="#mobile">മൊബൈൽ</a><a href="#kudumbam">കുടുംബം</a><a href="#kanakku">കണക്ക്</a><a href="#maranam">മരണം</a><a href="#kakkayum">കാക്കയും കുയിലും</a><a href="#vidaparayumbol">വിടപറയുമ്പോൾ</a><a href="#mrugam">മൃഗം</a><a href="#prakrithi">പ്രകൃതി</a><a href="#baloon">ബലൂൺ</a><a href="#vidhibalam">വിധിബലം</a><a href="#kalindi">കാളിന്ദി</a><a href="#guru">ഗുരു</a><a href="#thayareduppu">തയ്യാറെടുപ്പ്</a><a href="#randamklass">രണ്ടാം ക്ലാസും ഗുസ്തിയും</a><a href="#paradi">പരഡി</a><a href="#mandan">മണ്ടൻ</a><a href="#nandi">നന്ദി</a><a href="#makkal">മക്കൾ</a><a href="#ahwanam">ആഹ്വാനം</a><a href="#purakottu">പുറകോട്ട് നടക്കുന്നവൻ</a><a href="#jeevitham">ജീവിതം</a><a href="#abaddham">അബദ്ധം പറ്റരുത്</a><a href="#ormappoov">ഓർമ്മപ്പൂവ്</a><a href="#malamolile">മലമോളിലെ മന്നൻ</a><a href="#police">പോലീസ്</a><a href="#krishi">കൃഷി</a><a href="#puthuneethi">പുതുനീതി</a><a href="#onathappan">ഓണത്തപ്പൻ</a><a href="#thankam">തങ്കം</a><a href="#padam">പാടം</a><a href="#devadas">എന്റെ ദേവദാസ്</a><a href="#nashtaswargam">നഷ്ടസ്വർഗം</a><a href="#theevravadam">തീവ്രവാദം</a><a href="#soothram">സൂത്രം</a><a href="#onam">ഓണം</a><a href="#ashwasavachanam">ആശ്വാസവചനം</a><a href="#ponnu">പൊന്ന്</a><a href="#jeevithapadam">ജീവിതപാഠം</a><a href="#prathijna">പ്രതിജ്ഞ</a><a href="#nashtam">നഷ്ടം</a><a href="#prathikaradurga">പ്രതികാരദുർഗ</a><a href="#bharanabhasha">ഭരണഭാഷ</a><a href="#puravritham">പുരാവൃത്തം</a><a href="#rajathaskaran">രജതസ്കരൻ</a></aside>
-<section class="book col-md-12 col-lg-9"><div class="book-intro"><div class="label">പദ്യ സമാഹാരം</div><h2>കേശവന്റെ വികൃതികൾ</h2><p class="ml">കേശവൻ ഊരാളത്ത്<br>സമർപ്പണവും കൃതജ്ഞതയും ജീവിതയാത്രയും കടന്ന് സമൂഹത്തിന്റെ നേരെ തിരിയുന്ന കവിതകൾ.</p></div>
+<section class="book col-md-12 col-lg-9"><div class="book-intro"><div class="label">പദ്യ സമാഹാരം</div><h2>വാക്കുകൾക്കിടയിലെ ജീവിതം</h2><p class="ml">സമർപ്പണവും കൃതജ്ഞതയും ജീവിതയാത്രയും കടന്ന് സമൂഹത്തിന്റെ നേരെ തിരിയുന്ന കവിതകൾ. താഴെ PDFയിലെ ക്രമത്തിൽ രചനകളുടെ പട്ടികയും പ്രധാന വരികളും ചേർത്തിരിക്കുന്നു.</p></div>
 <article class="poem" id="prarthana"><span class="poem-num">01 · പേജ് 04</span><h3>പ്രാർത്ഥന</h3><p class="verse">ആയിരമായിരം ഗോളങ്ങളാകാശവീഥിയിലങ്ങിങ്ങായി നിർത്തിയേവം
 ആലംബമില്ലാതെ ചുറ്റിക്കറക്കുന്നതൊരാമഹാശക്തിയെക്കുമ്പിടുന്നേൻ
 പുല്ലിലും പൂത്തുമ്പിയിലും പൂമരത്തുമ്പിലും ജീവചൈതന്യമേകി
@@ -137,74 +132,6 @@
 <section class="more"><div class="wrap more-grid row"><h2 class="col-md-8">കവിയുടെ ജീവിതവും പുസ്തകത്തിന്റെ പശ്ചാത്തലവും അറിയാം.</h2><a class="button col-md-auto" href="index.html">കവിയുടെ പേജ് കാണുക ↗</a></div></section>
 </main><footer><div class="wrap foot"><span class="ml">കേശവന്റെ വികൃതികൾ · കേശവൻ ഊരാളത്ത്</span><a href="#top">മുകളിലേക്ക് ↑</a></div></footer>
 <script>
-    const book = document.querySelector('.book');
-    const sourcePages = [...book.querySelectorAll(':scope > .book-intro, :scope > .poem')];
-    const flipbookShell = document.createElement('div');
-    flipbookShell.className = 'flipbook-shell';
-    flipbookShell.innerHTML = '<div class="flipbook-stage"></div><div class="flipbook-toolbar"><div class="flipbook-controls"><button class="flipbook-button flipbook-prev" type="button" aria-label="മുൻപത്തെ പേജ്">←</button><button class="flipbook-button flipbook-next" type="button" aria-label="അടുത്ത പേജ്">→</button></div><span class="flipbook-count" aria-live="polite"></span></div><p class="flipbook-hint ml">അമ്പുകൾ ഉപയോഗിച്ച് പേജുകൾ മാറ്റാം</p>';
-    const flipbookStage = flipbookShell.querySelector('.flipbook-stage');
-    sourcePages.forEach((sourcePage, index) => {
-        const page = document.createElement('article');
-        page.className = 'flipbook-page';
-        page.dataset.index = String(index);
-        page.append(sourcePage);
-        const number = document.createElement('span');
-        number.className = 'flipbook-page-number';
-        number.textContent = String(index + 1).padStart(2, '0');
-        page.append(number);
-        flipbookStage.append(page);
-    });
-    book.append(flipbookShell);
-    const flipPages = [...flipbookStage.querySelectorAll('.flipbook-page')];
-    const previousButton = flipbookShell.querySelector('.flipbook-prev');
-    const nextButton = flipbookShell.querySelector('.flipbook-next');
-    const pageCount = flipbookShell.querySelector('.flipbook-count');
-    let currentPage = 0;
-    let isFlipping = false;
-    function showPage(nextPage, animate = true) {
-        if (isFlipping) return;
-        const boundedPage = Math.max(0, Math.min(nextPage, flipPages.length - 1));
-        if (boundedPage === currentPage && animate) return;
-        const oldPage = currentPage;
-        const direction = boundedPage > oldPage ? 'forward' : 'backward';
-        currentPage = boundedPage;
-        flipPages.forEach((page, index) => {
-            page.classList.toggle('active', index === currentPage);
-            page.classList.toggle('prev', index < currentPage);
-            page.classList.toggle('next', index > currentPage);
-            page.classList.remove('turn-forward', 'turn-backward');
-        });
-        previousButton.disabled = isFlipping || currentPage === 0;
-        nextButton.disabled = isFlipping || currentPage === flipPages.length - 1;
-        pageCount.textContent = `പേജ് ${currentPage + 1} / ${flipPages.length}`;
-        if (animate && oldPage !== currentPage) {
-            isFlipping = true;
-            previousButton.disabled = true;
-            nextButton.disabled = true;
-            flipPages[oldPage].classList.add(direction === 'forward' ? 'turn-forward' : 'turn-backward');
-            window.setTimeout(() => {
-                isFlipping = false;
-                showPage(currentPage, false);
-            }, 700);
-        }
-    }
-    previousButton.addEventListener('click', () => showPage(currentPage - 1));
-    nextButton.addEventListener('click', () => showPage(currentPage + 1));
-    document.addEventListener('keydown', event => {
-        if (event.key === 'ArrowLeft') showPage(currentPage - 1);
-        if (event.key === 'ArrowRight') showPage(currentPage + 1);
-    });
-    document.querySelectorAll('.toc a').forEach(link => link.addEventListener('click', event => {
-        const targetId = link.getAttribute('href').slice(1);
-        const targetIndex = flipPages.findIndex(page => page.querySelector(`#${targetId}`));
-        if (targetIndex >= 0) {
-            event.preventDefault();
-            showPage(targetIndex);
-            document.querySelector('#poems').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    }));
-    showPage(0, false);
-
     const contentsToggle = document.querySelector('.contents-toggle');
     const contentsPanel = document.querySelector('#contents-panel');
     contentsToggle.addEventListener('click', () => {

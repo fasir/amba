@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ml">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ഓഡിയോകൾ | കേശവൻ ഊരാളത്ത്</title>
+  <meta name="description" content="കേശവൻ ഊരാളത്തിന്റെ ഓഡിയോകളുടെ പട്ടിക. കവിതാ ശബ്ദങ്ങൾ കേൾക്കൂ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Noto+Serif+Malayalam:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --night:#1f2925;
+      --forest:#284d3e;
+      --leaf:#8b9f76;
+      --clay:#bd643e;
+      --sand:#eee5d4;
+      --paper:#faf8f2;
+      --muted:#6f776f;
+      --line:#d8d0c0;
+      --white:#fff;
+    }
+    * { box-sizing:border-box }
+    html { scroll-behavior:smooth }
+    body {
+      margin:0;
+      background:var(--paper);
+      color:var(--night);
+      font-family:Manrope,'Noto Serif Malayalam',sans-serif;
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+    .ml { font-family:'Noto Serif Malayalam',serif }
+    .wrap {
+      width:min(1180px,calc(100% - 48px));
+      margin:auto;
+    }
+    a { text-decoration:none }
+    .site-header {
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:rgba(31,41,37,.94);
+      backdrop-filter: blur(8px);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      min-height:76px;
+      gap:24px;
+    }
+    .wordmark {
+      color:var(--white);
+      font-size:1.1rem;
+      font-weight:700;
+    }
+    .wordmark span {
+      display:block;
+      color:rgba(255,255,255,.62);
+      font-size:.63rem;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      margin-top:2px;
+    }
+    .nav-links {
+      display:flex;
+      align-items:center;
+      gap:28px;
+      flex-wrap:wrap;
+    }
+    .nav-links a {
+      color:rgba(255,255,255,.8);
+      font-size:.8rem;
+    }
+    .nav-links a:hover { color:#fff }
+    .nav-links .nav-button {
+      border:1px solid rgba(255,255,255,.45);
+      padding:8px 15px;
+      color:#fff;
+    }
+    .menu { display:none }
+
+    .hero {
+      background:linear-gradient(110deg, rgba(24, 36, 31, .97) 0%, rgb(35, 66, 54) 54%, rgb(40 77 62) 100%);
+      position:relative;
+      overflow:hidden;
+      padding:82px 0 68px;
+      border-bottom:1px solid rgba(255,255,255,.1);
+    }
+    .hero:before {
+      content:'ഓഡിയോ';
+      position:absolute;
+      right:-30px;
+      bottom:26px;
+      color:rgba(255,255,255,.08);
+      font:600 clamp(3rem,8vw,7rem)/1 'Noto Serif Malayalam',serif;
+      transform:rotate(-8deg);
+    }
+    .hero-grid {
+      display:grid;
+      grid-template-columns:minmax(0,1fr) minmax(280px,.7fr);
+      gap:48px;
+      align-items:center;
+      position:relative;
+      z-index:1;
+    }
+    .kicker {
+      color:#ddad77;
+      font-size:.7rem;
+      font-weight:800;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+    }
+    h1 {
+      margin:18px 0 14px;
+      color:var(--white);
+      font-size:clamp(3rem,7vw,5.5rem);
+      line-height:1.08;
+      font-weight:600;
+      letter-spacing:0;
+    }
+    .hero-copy {
+      max-width:620px;
+      color:rgba(255,255,255,.76);
+      font-size:1.08rem;
+      margin:0;
+    }
+    .side-panel {
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.18);
+      padding:26px 24px;
+      color:#fff;
+      box-shadow:0 16px 30px rgba(10,17,15,.18);
+    }
+    .side-panel .label {
+      display:block;
+      font-size:.68rem;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:#e3b783;
+      margin-bottom:14px;
+    }
+    .side-panel strong {
+      display:block;
+      font-size:2.2rem;
+      color:#fff;
+      margin-bottom:10px;
+      font-weight:700;
+    }
+    .side-panel p {
+      margin:0;
+      color:rgba(255,255,255,.72);
+      font-size:.9rem;
+    }
+
+    .listings {
+      padding:70px 0 90px;
+      background:#f5efe7;
+    }
+    .section-head {
+      display:flex;
+      justify-content:space-between;
+      gap:24px;
+      align-items:end;
+      margin-bottom:28px;
+    }
+    .eyebrow {
+      color:var(--clay);
+      font-size:.68rem;
+      font-weight:800;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+    }
+    .section-title {
+      font-size:clamp(2rem,4vw,3.1rem);
+      line-height:1.2;
+      margin:12px 0 0;
+      color:var(--forest);
+    }
+    .audio-grid {
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:22px;
+    }
+    .audio-card {
+      background:var(--white);
+      border:1px solid var(--line);
+      box-shadow:0 16px 30px rgba(57,45,27,.06);
+      padding:26px 22px 20px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      min-height:100%;
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .audio-card:hover {
+      transform:translateY(-4px);
+      box-shadow:0 18px 36px rgba(57,45,27,.09);
+    }
+    .audio-index {
+      color:var(--clay);
+      font-size:.72rem;
+      letter-spacing:.14em;
+      font-weight:800;
+      text-transform:uppercase;
+    }
+    .audio-title {
+      font-size:1.7rem;
+      line-height:1.25;
+      color:var(--forest);
+      margin:0;
+    }
+    .audio-meta {
+      color:var(--muted);
+      font-size:.78rem;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin:0;
+    }
+    .audio-card p {
+      margin:0;
+      color:var(--muted);
+      font-size:.96rem;
+      line-height:1.8;
+    }
+    audio {
+      width:100%;
+      margin-top:8px;
+      border-radius:0;
+      outline:none;
+    }
+    .actions {
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:auto;
+    }
+    .button {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      text-decoration:none;
+      padding:12px 16px;
+      font-size:.78rem;
+      font-weight:700;
+      border:1px solid transparent;
+      transition:all .2s ease;
+    }
+    .button.primary {
+      background:var(--clay);
+      color:#fff;
+    }
+    .button.primary:hover { background:#d47750 }
+    .button.ghost {
+      border-color:var(--forest);
+      color:var(--forest);
+      background:transparent;
+    }
+    .button.ghost:hover {
+      background:var(--forest);
+      color:#fff;
+    }
+
+    footer {
+      background:var(--night);
+      padding:28px 0;
+      color:rgba(255,255,255,.55);
+      font-size:.75rem;
+    }
+    .footer {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+    .footer a {
+      color:#dfac76;
+    }
+
+    @media (max-width: 900px) {
+      .audio-grid { grid-template-columns:1fr; }
+      .hero-grid { grid-template-columns:1fr; }
+      .section-head { display:block; }
+      .section-head .button { margin-top:12px; }
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width:min(100% - 30px, 700px); }
+      .nav-links { display:none; }
+      .site-header { padding:14px 0; }
+      .hero { padding:70px 0 56px; }
+      .audio-card { padding:20px 18px 18px; }
+      .audio-title { font-size:1.45rem; }
+      .footer { justify-content:center; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="wordmark ml" href="index.html">കേശവൻ ഊരാളത്ത്<span>കവി · അധ്യാപകൻ · സാമൂഹിക നിരീക്ഷകൻ</span></a>
+    <nav class="nav-links" aria-label="മെയിൻ മെനു">
+      <a href="index.html#about">എന്നെക്കുറിച്ച്</a>
+      <a href="index.html#works">കവിതകൾ</a>
+      <a href="audios.html">ഓഡിയോകൾ</a>
+      <a href="index.html#contact" class="nav-button">ബന്ധപ്പെടുക</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker">വായനയുടെ ശബ്ദം</div>
+        <h1 class="ml">ഓഡിയോകൾ</h1>
+        <p class="hero-copy ml">കേശവൻ ഊരാളത്തിന്റെ പദ്യങ്ങളിലേക്ക് ശബ്ദം ചേർക്കുന്ന ചെറു ശ്രവണങ്ങൾ. സുഖം, ഓർമ്മ, പരിഹാസം, സ്നേഹത്തിന്റെ ചെറിയ ഓർമ്മച്ചെരിച്ചിൽ ഇവിടെ കേൾക്കാം.</p>
+      </div>
+      <aside class="side-panel" aria-label="ഓഡിയോ റൗണ്ട്">
+        <span class="label">ലിസ്റ്റുചെയ്തത്</span>
+        <strong>03</strong>
+        <p class="ml">വിവിധ ശൈലിയിലുള്ള ഓഡിയോകൾ, ചുരുക്കത്തിൽ ചിട്ടപ്പെടുത്തിയ ശ്രദ്ധയോടെ.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="listings">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">പുതിയ ശ്രവണം</div>
+          <h2 class="section-title ml">കവിതകളുടെ ശബ്ദപഥം</h2>
+        </div>
+        <a class="button ghost ml" href="index.html">ഹോം പേജിലേക്ക്</a>
+      </div>
+
+      <div class="audio-grid">
+        <article class="audio-card">
+          <div>
+            <div class="audio-index">Audio 01</div>
+            <h3 class="audio-title ml">ചൂട് </h3>
+            <p class="audio-meta">കേശവൻ ഊരാളത്ത്</p>
+          </div>
+          <!-- <p class="ml">വായനയുടെ മൃദുസൗന്ദര്യം, ചിരിയും സങ്കടവും കൂട്ടിവച്ച ശബ്ദം.</p> -->
+          <audio controls preload="none">
+            <source src="Audios/1.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="actions">
+            <a class="button primary ml" href="Audios/1.ogg" download>ഡൗൺലോഡ്</a>
+          </div>
+        </article>
+
+        <article class="audio-card">
+          <div>
+            <div class="audio-index">Audio 02</div>
+            <h3 class="audio-title ml">പര്യവസാനം  </h3>
+            <p class="audio-meta">കേശവൻ ഊരാളത്ത്</p>
+          </div>
+          <!-- <p class="ml">വീടും നഗരവും സമൂഹവും ചുറ്റി ചിന്തിക്കുന്ന ഒരു ശബ്ദസഞ്ചാരം.</p> -->
+          <audio controls preload="none">
+            <source src="Audios/2.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="actions">
+            <a class="button primary ml" href="Audios/2.ogg" download>ഡൗൺലോഡ്</a>
+          </div>
+        </article>
+
+        <article class="audio-card">
+          <div>
+            <div class="audio-index">Audio 03</div>
+            <h3 class="audio-title ml">അഭ്യർത്ഥന </h3>
+            <p class="audio-meta">കേശവൻ ഊരാളത്ത്</p>
+          </div>
+          <!-- <p class="ml">വായനക്കാരനെ നിലച്ച pauses വഴിയുള്ള മനസിന്റെ പുറത്തേക്ക് കൊണ്ടുപോകുന്ന ശബ്ദം.</p> -->
+          <audio controls preload="none">
+            <source src="Audios/3.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+          <div class="actions">
+            <a class="button primary ml" href="Audios/3.ogg" download>ഡൗൺലോഡ്</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer">
+    <span class="ml">© കേശവൻ ഊരാളത്ത് · മലയാള കവി</span>
+    <a href="index.html" class="ml">ഹോം പേജിലേക്ക് ↑</a>
+  </div>
+</footer>
+</body>
+</html>
